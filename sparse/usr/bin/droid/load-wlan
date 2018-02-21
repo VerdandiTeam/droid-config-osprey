@@ -1,4 +1,0 @@
-#!/bin/sh
-touch /dev/wcnss_wlan
-sleep 5
-modprobe prima_wlan

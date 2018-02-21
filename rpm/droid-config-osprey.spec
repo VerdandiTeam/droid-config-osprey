@@ -5,7 +5,7 @@
 %define vendor motorola
 
 %define vendor_pretty Motorola
-%define device_pretty Moto G (3nd Gen.)
+%define device_pretty Moto G (3rd Gen.)
 
 # Community HW adaptations need this
 %define community_adaptation 1
