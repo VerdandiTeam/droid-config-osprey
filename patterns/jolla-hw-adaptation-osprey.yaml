@@ -1,21 +1,19 @@
 # Feel free to disable non-critical HA parts during devel by commenting lines out
 # Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
 
-Description: Pattern with packages for ghost HW Adaptation
-Name: jolla-hw-adaptation-ghost
+Description: Pattern with packages for osprey HW Adaptation
+Name: jolla-hw-adaptation-osprey
 Requires:
-- droid-hal-ghost
-- droid-hal-ghost-img-boot
-- droid-hal-ghost-kernel
-- droid-hal-ghost-kernel-modules
-- droid-hal-ghost-detritus
-- droid-config-ghost-sailfish
-- droid-config-ghost-pulseaudio-settings
-- droid-config-ghost-policy-settings
-- droid-config-ghost-preinit-plugin
-- droid-config-ghost-flashing
-- droid-config-ghost-bluez4
-- droid-hal-version-ghost
+- droid-hal-osprey
+- droid-hal-osprey-img-boot
+- droid-hal-osprey-kernel-modules
+- droid-config-osprey-sailfish
+- droid-config-osprey-pulseaudio-settings
+- droid-config-osprey-policy-settings
+- droid-config-osprey-preinit-plugin
+- droid-config-osprey-flashing
+- droid-config-osprey-bluez5
+- droid-hal-version-osprey
 
 # Hybris packages
 - libhybris-libEGL
@@ -26,14 +24,13 @@ Requires:
 - hybris-libsensorfw-qt5
 
 # Vibra
-- ngfd-plugin-droid-vibrator
-- qt5-feedback-haptics-droid-vibrator
+- ngfd-plugin-native-vibrator
+- qt5-feedback-haptics-native-vibrator
 
 # Needed for /dev/touchscreen symlink
 - qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
-- pulseaudio-modules-droid-glue
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -49,7 +46,7 @@ Requires:
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
 # For devices with droidmedia and gst-droid built, see HADK pdf for more information
-- gstreamer1.0-droid
+#- gstreamer1.0-droid
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
@@ -76,15 +73,10 @@ Requires:
 
 # For GPS
 - geoclue-provider-hybris
-# For Mozilla location services (online)
-- geoclue-provider-mlsdb
-
-# Flashlight
-- jolla-settings-system-flashlight
 
 # For FM radio on some QCOM devices
 #- qt5-qtmultimedia-plugin-mediaservice-irisradio
 #- jolla-mediaplayer-radio
 
-Summary: Jolla HW Adaptation ghost
+Summary: Jolla HW Adaptation osprey
 
