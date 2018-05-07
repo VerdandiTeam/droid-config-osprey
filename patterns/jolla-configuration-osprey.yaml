@@ -32,6 +32,8 @@ Requires:
 # Sailfish OS CSD tool for hardware testing
 # needs some configuration to get all features working
 - csd
+# sd-utils for mounting sdcard
+- sd-utils
 
 # Devices with 2G or more memory should also include this booster
 # to improve camera startup times and the like
